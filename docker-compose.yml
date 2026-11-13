@@ -2,6 +2,7 @@ services:
   muse2api:
     build: .
     image: muse2api:latest
+    user: "0:0"
     restart: unless-stopped
     env_file:
       - path: .env
