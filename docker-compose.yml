@@ -9,5 +9,7 @@ services:
     ports:
       - "18610:18610"
     volumes:
-      - ./data:/app/data
+      - muse2api_data:/app/data
     shm_size: "1gb"
+volumes:
+  muse2api_data:
